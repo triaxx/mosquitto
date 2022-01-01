@@ -20,6 +20,9 @@ Contributors:
 
 #include <errno.h>
 #include <string.h>
+#if defined(__NetBSD__)
+#include <strings.h>
+#endif
 
 #include "mosquitto.h"
 #include "mqtt_protocol.h"
